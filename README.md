@@ -1,4 +1,12 @@
-Lorem Ipsum Sit
+Requirements:
+Create a HTML table with id, user_name and password columns
+Create API method to read list of students from MYSQL table
+Create API method to update list of students in MYSQL table
+Fill HTML table with data returned from API read method
+Create separate HTML button that randomly changes the passwords and user_names and calls the API update method the MYSQL table
+Commit all your changes to Github for review
+Use CIUnit to test 'ALL' PHP functionality. (Controllers, Models)
+Make an initial commit on Github with no changes before you start working on the assignment
 
 =======
 # ciseed
