@@ -32,6 +32,8 @@ class Welcome extends CI_Controller {
 	}
 
 	public function random_update(){
+		$id = file_get_contents("php://input"); 
+		$id = json_decode($id,true); 
 		if($id){
 			$this->load->helper('string');
 			$username = random_string('alpha', rand(3,10));

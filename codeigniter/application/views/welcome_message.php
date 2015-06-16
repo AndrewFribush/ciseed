@@ -10,7 +10,43 @@
 	</head>
 
 	<body ng-app="studentApp" ng-controller="studentCtrl">
-	
+		<div class="container">
+		
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand">CISeed Project</a>
+					</div>
+				</div>
+			</nav>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Username</th>
+						<th>Password</th>
+						<th>Randomize</th>
+					</tr>
+				</thead>
+				<tbody>
+                <tr ng-repeat='student in studentData'>
+                   <td> {{student.user_name}}  </td>   
+                   <td> {{student.password}}  </td>
+                   <td> <input class="btn btn-failure" type="submit" id="submit" value="Randomize" ng-click="update(student.id)"></td>
+                </tr>
+            	</tbody>
+            </table>
+			<div class="row-fluid">
+				<div class="col-md-13">
+				<legend>Create Random User</legend>
+
+                <form ng-submit="create()"  class="form-inline">
+                	<input class='btn btn-success'type="submit" id="submit" value="Create"/>
+                </form>
+
+            </div>
+        </div>
+	</div>
+			
 	</body>
 
 		<script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.js"></script>
